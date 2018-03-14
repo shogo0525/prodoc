@@ -1,6 +1,7 @@
 const slides = {
   s1: {
     isFirst: true,
+    title: "調べたい言語を選んでください。",
     choices: [
       { name: "Ruby", next: "s2" },
       { name: "PHP", next: "s3" },
@@ -8,12 +9,14 @@ const slides = {
     ]
   },
   s2: {
+    title: "調べたいフレームワークを選んでください。",
     choices: [
       { name: "Ruby on Rails", next: "" },
       { name: "Sinatora", next: "" }
     ]
   },
   s3: {
+    title: "調べたいフレームワークを選んでください。",
     choices: [
       { name: "CakePHP", next: "" },
       { name: "Laravel", next: "" },
@@ -21,6 +24,7 @@ const slides = {
     ]
   },
   s4: {
+    title: "調べたいフレームワークを選んでください。",
     choices: [
       { name: "Django", next: "" },
       { name: "Flask", next: "" },

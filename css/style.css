@@ -9,6 +9,10 @@
   background: lightgray;
 }
 
+#title {
+  text-align: center;
+}
+
 #choice-btn-wrap {
   background: lightblue;
 }
