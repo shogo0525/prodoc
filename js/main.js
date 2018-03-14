@@ -11,41 +11,42 @@ const slides = {
   s2: {
     title: "調べたいフレームワークを選んでください。",
     choices: [
-      { name: "Ruby on Rails", next: "" },
-      { name: "Sinatora", next: "" }
+      { name: "Ruby on Rails", next: "s1" },
+      { name: "Sinatora", next: "s1" }
     ]
   },
   s3: {
     title: "調べたいフレームワークを選んでください。",
     choices: [
-      { name: "CakePHP", next: "" },
-      { name: "Laravel", next: "" },
-      { name: "Simphony", next: "" }
+      { name: "CakePHP", next: "s1" },
+      { name: "Laravel", next: "s1" },
+      { name: "Simphony", next: "s1" }
     ]
   },
   s4: {
     title: "調べたいフレームワークを選んでください。",
     choices: [
-      { name: "Django", next: "" },
-      { name: "Flask", next: "" },
-      { name: "Bottle", next: "" }
+      { name: "Django", next: "s1" },
+      { name: "Flask", next: "s1" },
+      { name: "Bottle", next: "s1" }
     ]
   }
 }
 
 let startId = "s1";
-let answeredIdList = [startId];
 let currentSlideId = startId;
 
 const app = new Vue({
   el: "#app",
   data: {
-    slide: slides[currentSlideId]
+    slide: slides[currentSlideId],
+    answeredList: []
   },
   methods: {
     answer: function(e) {
-      currentSlideId = e.target.getAttribute("next")
-      answeredIdList.push(currentSlideId)
+      currentSlideId = answeredId = e.target.getAttribute("next")
+      answeredName = e.target.getAttribute("value")
+      this.answeredList.push({ id: answeredId, name: answeredName  })
       this.slide = slides[currentSlideId]
     }
   }

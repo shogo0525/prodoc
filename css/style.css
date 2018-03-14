@@ -13,6 +13,18 @@
   text-align: center;
 }
 
+#breadcrumb {
+  height: 30px;
+  background: lightcoral;
+  display: flex;
+}
+
+#breadcrumb li {
+  list-style: none;
+  color: blue;
+  margin-right: 10px;
+}
+
 #choice-btn-wrap {
   background: lightblue;
 }

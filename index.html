@@ -8,6 +8,9 @@
 <body>
     <div id="app">
       <h2 id="title">{{ slide.title }}</h2>
+      <ul id="breadcrumb">
+        <li v-for="answer in answeredList">{{ answer.name }}</li>
+      </ul>
       <div id="choice-btn-wrap">
         <input v-for="choice in slide.choices"
               class="btn"
