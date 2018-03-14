@@ -1,3 +1,7 @@
+*:focus {
+  outline: none;
+}
+
 #app {
   margin: 0 auto;
   width: 1000px;
@@ -20,4 +24,13 @@
   border: none;
   width: 300px;
   height: 60px;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.9);
+  border: 1px solid lightgray;
+}
+
+.btn:active {
+  border: 3px solid lightgray;
 }

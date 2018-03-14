@@ -37,5 +37,12 @@ const app = new Vue({
   el: "#app",
   data: {
     slide: slides[currentSlideId]
+  },
+  methods: {
+    answer: function(e) {
+      currentSlideId = e.target.getAttribute("next")
+      answeredIdList.push(currentSlideId)
+      this.slide = slides[currentSlideId]
+    }
   }
 });
