@@ -28,3 +28,14 @@ const slides = {
     ]
   }
 }
+
+let startId = "s1";
+let answeredIdList = [startId];
+let currentSlideId = startId;
+
+const app = new Vue({
+  el: "#app",
+  data: {
+    slide: slides[currentSlideId]
+  }
+});

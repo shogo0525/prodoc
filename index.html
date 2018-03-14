@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -5,9 +6,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <div id="app">
-      
+      <input v-for="choice in slide.choices"
+             type="button" :value="choice.name">
     </div>
   
     <!-- script -->
