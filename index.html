@@ -7,8 +7,11 @@
 </head>
 <body>
     <div id="app">
-      <input v-for="choice in slide.choices"
-             type="button" :value="choice.name">
+      <div id="choice-btn-wrap">
+        <input v-for="choice in slide.choices"
+              class="btn"
+              type="button" :value="choice.name">
+        </div>
     </div>
   
     <!-- script -->
