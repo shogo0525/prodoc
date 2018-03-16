@@ -64,6 +64,10 @@
   border: 3px solid lightgray;
 }
 
+.btn-big {
+  width: 500px;
+}
+
 .btn-small {
   margin-top: 15px;
   font-size: 12px;

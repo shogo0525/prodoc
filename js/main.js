@@ -18,6 +18,7 @@ const slides = {
   },
   // Ruby on Rails
   s2_1: {
+    btnBig: true,
     title: "学びたい教材を選んでください。",
     choices: [
       { name: "Ruby on Rails チュートリアル", next: "s2_1_1" },
@@ -54,6 +55,7 @@ const slides = {
   },
   // Sinatora
   s2_2: {
+    btnBig: true,
     title: "学びたい教材を選んでください。",
     choices: [
       { name: "Webアプリ開発入門 Sinatra編", next: "s2_2_1" },
@@ -85,6 +87,7 @@ const slides = {
   },
   // CakePHP
   s3_1: {
+    btnBig: true,
     title: "学びたい教材を選んでください。",
     choices: [
       { name: "ドットインストール　CakePHP3入門", next: "s3_1_1" },

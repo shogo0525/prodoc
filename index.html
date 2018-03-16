@@ -13,7 +13,7 @@
       </ul>
       <div id="choice-btn-wrap">
         <input v-for="choice in slide.choices"
-              class="btn"
+              class="btn" :class="{ 'btn-big': slide.btnBig }"
               type="button" :value="choice.name" :next="choice.next"
               @click="answer">
       </div>
