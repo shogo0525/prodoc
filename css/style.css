@@ -5,7 +5,7 @@
 #app {
   margin: 0 auto;
   width: 1000px;
-  height: 600px;
+  height: 500px;
   background: lightgray;
 }
 
@@ -49,4 +49,9 @@
 
 .btn:active {
   border: 3px solid lightgray;
+}
+
+#last {
+  margin: 50px auto;
+  width: 80%;
 }

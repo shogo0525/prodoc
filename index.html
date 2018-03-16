@@ -16,7 +16,11 @@
               class="btn"
               type="button" :value="choice.name" :next="choice.next"
               @click="answer">
-        </div>
+      </div>
+      <div id="last" v-if="slide.isLast">
+        <p v-html="slide.description"></p>
+        <a :href="slide.link" target="_blank">{{ slide.link }}</a>
+      </div>
     </div>
   
     <!-- script -->
