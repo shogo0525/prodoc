@@ -110,14 +110,88 @@ const slides = {
                  + "(引用) https://mayonez.jp/topic/808",
     link: "http://libro.tuyano.com/index2?id=4536003"
   },
+  // Laravel
+  s3_2: {
+    btnBig: true,
+    title: "学びたい教材を選んでください。",
+    choices: [
+      { name: "WinRoadのLaravel4初心者講座", next: "s3_2_1" },
+      { name: "Libro ビギナーのためのLaravel入門", next: "s3_2_2" }
+    ]
+  },
+  s3_2_1: {
+    isLast: true,
+    title: "WinRoadのLaravel4初心者講座 ",
+    description: "「PHP初心者に、Laravel4を使ってもらいたい」というコンセプトのもとに制作された、Laravel４・Laravel5の入門サイトです。<br>"
+                 + "個人の方が運営しているサイトですが、サイトデザインやチュートリアルの内容などは、どれもハイクオリティ。<br>"
+                 + "Laravel4が中心の内容ですが、Laravel５の登場後は、Laravel5のインストール方法などもチュートリアル内容に加わりました。<br><br>"
+                 + "(引用) https://mayonez.jp/topic/1824",
+    link: "http://laravel4.winroad.jp/"
+  },
+  s3_2_2: {
+    isLast: true,
+    title: "Libro ビギナーのためのLaravel入門",
+    description: "フレームワークの使い方をテーマにした、Laravel入門チュートリアルサイトです。フレームワークやPHPに関する知識が全くないという初心者にとっては、やや難しい内容かもしれません。<br>"
+                 + "しかし、説明がとても丁寧なので、PHPや他プログラミング言語、フレームワークなどの知識がある程度ある方にとっては、進めやすいでしょう。<br><br>"
+                 + "(引用) https://mayonez.jp/topic/1824",
+    link: "http://libro.tuyano.com/index2?id=3766003"
+  },
+  // Python
   s4: {
     title: "学びたいフレームワークを選んでください。",
     choices: [
-      { name: "Django", next: "s1" },
-      { name: "Flask", next: "s1" },
-      { name: "Bottle", next: "s1" }
+      { name: "Django", next: "s4_1" },
+      { name: "Flask", next: "s4_2" }
     ]
-  }
+  },
+  // Django
+  s4_1: {
+    btnBig: true,
+    title: "学びたい教材を選んでください。",
+    choices: [
+      { name: "Django Girls Tutorial", next: "s4_1_1" },
+      { name: "Python Django入門", next: "s4_1_2" }
+    ]
+  },
+  s4_1_1: {
+    isLast: true,
+    title: "Django Girls Tutorial ",
+    description: "Djangoのチュートリアルをいろいろ探してみた結果、「Django Girls Tutorial」がとても良心的に感じました。<br>"
+                 + "Web開発の経験がない人でも一人で進められるのではと思うほどの丁寧さでした。<br><br>"
+                 + "(引用) https://qiita.com/takechanman1228/items/d711e175b32f833c5e9c",
+    link: "https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/content/how_the_internet_works/index.html"
+  },
+  s4_1_2: {
+    isLast: true,
+    title: "Python Django入門 ",
+    description: "IDEとかBootstrapまで丁寧に説明されていて書籍管理サイトを作成するチュートリアル。<br><br>"
+                 + "(引用) https://qiita.com/takechanman1228/items/d711e175b32f833c5e9c",
+    link: "https://qiita.com/kaki_k/items/511611cadac1d0c69c54"
+  },
+  // Flask
+  s4_2: {
+    btnBig: true,
+    title: "学びたい教材を選んでください。",
+    choices: [
+      { name: "ウェブアプリケーションFW Flask を使ってみる", next: "s4_2_1" },
+      { name: "Flask Tutorial by Chris Hawkes", next: "s4_2_2" }
+    ]
+  },
+  s4_2_1: {
+    isLast: true,
+    title: "ウェブアプリケーションフFW Flask を使ってみる ",
+    description: "簡単な説明とコードを書くことができるので、最初にやっとくといいチュートリアルです。<br><br>"
+                 + "(引用) http://clc.gonna.jp/2017/04/post-1490/",
+    link: "https://qiita.com/ynakayama/items/2cc0b1d3cf1a2da612e4"
+  },
+  s4_2_2: {
+    isLast: true,
+    title: "Flask Tutorial by Chris Hawkes",
+    description: "全９本のちょっと長めのチュートリアルです。<br>"
+                 + "内容も実戦でも問題なく使えるコンテンツになっているので、一度やっておくと結構勉強になります！<br><br>"
+                 + "(引用) http://clc.gonna.jp/2017/04/post-1490/",
+    link: "https://www.youtube.com/watch?list=PLei96ZX_m9sWQco3fwtSMqyGL-JDQo28l&v=gDSLrpxR3G4"
+  },
 }
 
 let startId = "s1";
