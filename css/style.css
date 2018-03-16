@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 10px;
   width: 800px;
-  height: 400px;
+  height: 450px;
   background: lightgray;
 }
 
@@ -58,6 +58,13 @@
 
 .btn:active {
   border: 3px solid lightgray;
+}
+
+.btn-small {
+  margin-top: 15px;
+  font-size: 12px;
+  width: 200px;
+  height: 30px;
 }
 
 #last {

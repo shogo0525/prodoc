@@ -21,6 +21,10 @@
         <p v-html="slide.description"></p>
         <a :href="slide.link" target="_blank">{{ slide.link }}</a>
       </div>
+
+      <input v-if="slide.isFirst != true"
+             class="btn btn-small" type="button"
+             value="はじめからやり直す" @click="restart">
     </div>
   
     <!-- script -->

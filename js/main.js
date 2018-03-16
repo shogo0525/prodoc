@@ -86,6 +86,11 @@ const app = new Vue({
       answeredName = e.target.getAttribute("value")
       this.answeredList.push({ id: answeredId, name: answeredName  })
       this.slide = slides[currentSlideId]
+    },
+    restart: function() {
+      currentSlideId = startId;
+      this.answeredList = [];
+      this.slide = slides[currentSlideId]
     }
   }
 });
