@@ -19,7 +19,7 @@
       </div>
       <div id="last" v-if="slide.isLast">
         <p v-html="slide.description"></p>
-        <a :href="slide.link" target="_blank">{{ slide.link }}</a>
+        <a class="btn" :href="slide.link" target="_blank">この教材で学ぶ</a>
       </div>
 
       <input v-if="slide.isFirst != true"
