@@ -1,3 +1,7 @@
+:root {
+  --hl_color: #1EB0FF
+}
+
 *:focus {
   outline: none;
 }
@@ -6,7 +10,7 @@
   margin: 0 auto;
   padding: 10px;
   width: 800px;
-  height: 470px;
+  height: 500px;
   background: lightgray;
 }
 
@@ -21,7 +25,7 @@
 #breadcrumb li {
   display: inline;
   list-style: none;
-  color: #1EB0FF;
+  color: var(--hl_color);
   font-weight: bold;
 }
 
@@ -68,8 +72,8 @@
 }
 
 #last {
-  margin: 30px auto;
-  width: 80%;
+  margin: 10px auto;
+  width: 85%;
   word-wrap: break-word;
 }
 
@@ -77,6 +81,6 @@
   text-decoration: none;
   text-align: center;
   line-height: 3;
-  background: #1EB0FF;
+  background: var(--hl_color);
   color: white;
 }
