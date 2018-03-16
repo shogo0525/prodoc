@@ -4,6 +4,7 @@
 
 #app {
   margin: 0 auto;
+  padding: 10px;
   width: 800px;
   height: 400px;
   background: lightgray;
@@ -15,18 +16,26 @@
 
 #breadcrumb {
   height: 30px;
-  background: lightcoral;
-  display: flex;
 }
 
 #breadcrumb li {
+  display: inline;
   list-style: none;
   color: blue;
-  margin-right: 10px;
+  font-weight: bold;
+}
+
+#breadcrumb li::after {
+  content: ">";
+  padding: 0 3px;
+  color: #555;
+}
+
+#breadcrumb li:last-child:after{
+  content: '';
 }
 
 #choice-btn-wrap {
-  background: lightblue;
 }
 
 .btn {
