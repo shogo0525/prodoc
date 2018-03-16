@@ -52,7 +52,29 @@ const slides = {
                  + "(引用) https://techacademy.jp/magazine/5910",
     link: "https://dotinstall.com/lessons/basic_rails_v3"
   },
-  // Sintora
+  // Sinatora
+  s2_2: {
+    title: "学びたい教材を選んでください。",
+    choices: [
+      { name: "Webアプリ開発入門 Sinatra編", next: "s2_2_1" },
+      { name: "公式ドキュメント（翻訳版）", next: "s2_2_2" }
+    ]
+  },
+  s2_2_1: {
+    isLast: true,
+    title: "Webアプリ開発入門 Sinatra編 ",
+    description: "paizaラーニングは一回3分程度の動画を見て、ブラウザ上で演習問題を解きながら、Sinatraの使い方について楽しく・効率よく学ぶことができます。<br>"
+                 + "未経験者でもブラウザさえあれば、環境構築不要で手を動かしながらSinatraの基礎を習得できます。<br><br>"
+                 + "(引用) http://paiza.hatenablog.com/entry/2017/12/12/%E5%88%9D%E5%BF%83%E8%80%85%E3%81%A7%E3%82%82%E3%81%BB%E3%81%BC%E7%84%A1%E6%96%99%E3%81%A7Ruby%E7%94%A8%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%80%8CSinatra%E3%80%8D%E3%81%AB",
+    link: "https://paiza.jp/works/sinatra/primer"
+  },
+  s2_2_2: {
+    isLast: true,
+    title: "公式ドキュメント（翻訳版）",
+    description: "公式ドキュメントのありがたい日本語訳版がGitHub上で公開されています。<br><br>"
+                 + "(引用) http://paiza.hatenablog.com/entry/2017/12/12/%E5%88%9D%E5%BF%83%E8%80%85%E3%81%A7%E3%82%82%E3%81%BB%E3%81%BC%E7%84%A1%E6%96%99%E3%81%A7Ruby%E7%94%A8%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%80%8CSinatra%E3%80%8D%E3%81%AB",
+    link: "https://github.com/sinatra/sinatra/blob/master/README.ja.md"
+  },
   s3: {
     title: "学びたいフレームワークを選んでください。",
     choices: [
