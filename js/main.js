@@ -75,13 +75,37 @@ const slides = {
                  + "(引用) http://paiza.hatenablog.com/entry/2017/12/12/%E5%88%9D%E5%BF%83%E8%80%85%E3%81%A7%E3%82%82%E3%81%BB%E3%81%BC%E7%84%A1%E6%96%99%E3%81%A7Ruby%E7%94%A8%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%80%8CSinatra%E3%80%8D%E3%81%AB",
     link: "https://github.com/sinatra/sinatra/blob/master/README.ja.md"
   },
+  // PHP
   s3: {
     title: "学びたいフレームワークを選んでください。",
     choices: [
-      { name: "CakePHP", next: "s1" },
-      { name: "Laravel", next: "s1" },
-      { name: "Simphony", next: "s1" }
+      { name: "CakePHP", next: "s3_1" },
+      { name: "Laravel", next: "s3_2" }
     ]
+  },
+  // CakePHP
+  s3_1: {
+    title: "学びたい教材を選んでください。",
+    choices: [
+      { name: "ドットインストール　CakePHP3入門", next: "s3_1_1" },
+      { name: "初心者のためのCakePHP3 プログラミング入門", next: "s3_1_2" }
+    ]
+  },
+  s3_1_1: {
+    isLast: true,
+    title: "ドットインストール　CakePHP3入門 ",
+    description: "プログラミング言語のチュートリアルサイトとしておなじみの「ドットインストール」による、CakePHP3の入門講座。<br>"
+                 + "CakePHP3の特徴や概念などの基礎知識から、CakePHP3の基本操作を学習することができます。<br><br>"
+                 + "(引用) https://mayonez.jp/topic/808",
+    link: "http://dotinstall.com/lessons/basic_cakephp_v2"
+  },
+  s3_1_2: {
+    isLast: true,
+    title: "初心者のためのCakePHP3 プログラミング入門",
+    description: "CakePHP3のインストール方法から基本操作までを一通り学ぶことができるチュートリアルサイトです。<br>"
+                 + "CakePHP3に関する概念や基本知識に関してはほとんど説明がなく、インストールするところからスタートするので、CakePHP3やフレームワークを学んだことがないという方には、やや難しい内容となっています。<br><br>"
+                 + "(引用) https://mayonez.jp/topic/808",
+    link: "http://libro.tuyano.com/index2?id=4536003"
   },
   s4: {
     title: "学びたいフレームワークを選んでください。",
